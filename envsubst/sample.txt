@@ -1,0 +1,12 @@
+username=$NEW_USERNAME
+password=$NEW_PASSWORD
+#
+# cat sample.txt| sed 's/#.*//g' | sed '/^[[:space:]]*$/d' | envsubst 
+#
+
+
+
+   
+            
+#  export $(echo $(cat ../.env | sed 's/#.*//g'| xargs) | envsubst)
+#  docker compose up
