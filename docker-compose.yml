@@ -24,4 +24,6 @@ services:
 
 
 #export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst) sudo docker-compose up
-#export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst) docker compose up
+#
+#export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst)
+#docker compose up

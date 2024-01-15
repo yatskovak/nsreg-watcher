@@ -4,7 +4,8 @@ if [ -f .env ]; then
   export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst)
 fi
 
-source env/bin/activate
+#source env/bin/activate
+source venv312/bin/activate
 
 python src/website/manage.py migrate
 python src/website/manage.py runserver
